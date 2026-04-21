@@ -7,7 +7,8 @@ function App() {
     <div>
       <h1>Hello World, i am {name} and i am {age} years old</h1>
       <p>Heyy</p>
-      </div>
+      <p>Some extra code</p>
+    </div>
   )
 }
 
