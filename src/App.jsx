@@ -1,7 +1,7 @@
 import './App.css'
 
 function App() {
-  const name = "Shahul"
+  const name = getName()
   const age = 28
   return (
     <div>
@@ -12,5 +12,11 @@ function App() {
     </div>
   )
 }
+
+function getName(){
+  return "Shahul";
+}
+
+// COMPONENT = Function that returns JSX
 
 export default App
