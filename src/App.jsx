@@ -12,14 +12,18 @@ function Greeting({name,age}){
 }
 
 function App() {
-  const showGreeting = false;
+  let showGreeting = true;
+  function toggleGreeting(){
+    if(showGreeting){
+      showGreeting = false;
+    }else{
+      showGreeting = true;
+    }
+  }
   return (
     <>
-      {showGreeting ? (
-      <Greeting name={"Shahul"} age={28}/> 
-      ): (
-      <button>Click Me</button>
-      )}
+      <button onClick={toggleGreeting}>Click Me</button>
+      {showGreeting && <Greeting name={"Shahul"} age={28}/> }
     </>
   )
 }
