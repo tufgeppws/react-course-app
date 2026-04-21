@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 
 function Greeting({name,age}){
@@ -12,12 +13,12 @@ function Greeting({name,age}){
 }
 
 function App() {
-  let showGreeting = true;
+  const [showGreeting, setShowGreeting] = useState(false);
   function toggleGreeting(){
     if(showGreeting){
-      showGreeting = false;
+      setShowGreeting(false);
     }else{
-      showGreeting = true;
+      setShowGreeting(true);
     }
   }
   return (
