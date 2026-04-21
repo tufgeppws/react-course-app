@@ -15,7 +15,11 @@ function App() {
   const showGreeting = false;
   return (
     <>
-      {showGreeting ? <Greeting name={"Shahul"} age={28}/> : <button>Click Me</button>}
+      {showGreeting ? (
+      <Greeting name={"Shahul"} age={28}/> 
+      ): (
+      <button>Click Me</button>
+      )}
     </>
   )
 }
