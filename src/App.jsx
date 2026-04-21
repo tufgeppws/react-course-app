@@ -1,20 +1,27 @@
 import './App.css'
 
-function App() {
-  const name = getName()
+function Greeting(){
+  const name = "Shahul"
   const age = 28
   return (
-    <div>
-      <h1>Hello World, i am {name} and i am {age} years old</h1>
-      <p>Heyy</p>
-      <p>Some extra code</p>
-      <p>Some more extra code</p>
-    </div>
+    <>
+      <h1>Hello World, i am {name}</h1>
+      <h3>I am {age} this years old!</h3>
+      <p>Heyy Welcome, {name}</p>
+    </>
   )
 }
 
-function getName(){
-  return "Buhari";
+function App() {
+
+  return (
+    <>
+      <Greeting />
+      <Greeting />
+      <Greeting />
+      <Greeting />
+    </>
+  )
 }
 
 // COMPONENT = Function that returns JSX
