@@ -12,10 +12,10 @@ function Greeting({name,age}){
 }
 
 function App() {
-  const showGreeting = true;
+  const showGreeting = false;
   return (
     <>
-      {showGreeting && <Greeting name={"Shahul"} age={28}/>}
+      {showGreeting ? <Greeting name={"Shahul"} age={28}/> : <button>Click Me</button>}
     </>
   )
 }
