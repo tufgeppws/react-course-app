@@ -14,7 +14,7 @@ function App() {
 }
 
 function getName(){
-  return "Shahul";
+  return "Buhari";
 }
 
 // COMPONENT = Function that returns JSX
