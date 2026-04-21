@@ -15,11 +15,7 @@ function Greeting({name,age}){
 function App() {
   const [showGreeting, setShowGreeting] = useState(false);
   function toggleGreeting(){
-    if(showGreeting){
-      setShowGreeting(false);
-    }else{
-      setShowGreeting(true);
-    }
+    setShowGreeting(!showGreeting)
   }
   return (
     <>
