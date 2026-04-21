@@ -8,6 +8,7 @@ function App() {
       <h1>Hello World, i am {name} and i am {age} years old</h1>
       <p>Heyy</p>
       <p>Some extra code</p>
+      <p>Some more extra code</p>
     </div>
   )
 }
