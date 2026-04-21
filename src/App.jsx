@@ -1,12 +1,12 @@
 import './App.css'
 
-function Greeting(props){
+function Greeting({name,age}){
 
   return (
     <>
-      <h1>Hello World, i am {props.name}</h1>
-      <h3>I am {props.age} this years old!</h3>
-      <p>Heyy Welcome, {props.name}</p>
+      <h1>Hello World, i am {name}</h1>
+      <h3>I am {age} this years old!</h3>
+      <p>Heyy Welcome, {name}</p>
     </>
   )
 }
