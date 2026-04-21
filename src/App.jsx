@@ -12,13 +12,10 @@ function Greeting({name,age}){
 }
 
 function App() {
-
+  const showGreeting = true;
   return (
     <>
-      <Greeting name={"Shahul"} age={28}/>
-      <Greeting name={"Buhari"} age={29}/>
-      <Greeting name={"Solanki"} age={40}/>
-      <Greeting name={"rulona"} age={33}/>
+      {showGreeting && <Greeting name={"Shahul"} age={28}/>}
     </>
   )
 }
